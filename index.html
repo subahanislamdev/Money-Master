@@ -23,32 +23,34 @@
                     <form action="">
                         <h3 class="text-dark text-center fs-4 fw-bolder">Income</h3>
                        <div class="col-md-12">
-                        <label for="">Income: &nbsp;<input type="text" class="py-1 px-2 w-50 border-0 rounded-2"></label>
+                        <label for="">Income: &nbsp;<input id="income" type="text" class="py-1 px-2 w-50 border-0 rounded-2"></label>
                        </div>
                        <div class="col-md-12"> <h3 class="text-dark text-center py-2 fs-5 fw-bolder">Expensives</h3></div>
                        <div class="row">
                         <div class="col-md-12">
-                            <label for="" class="py-2">Food : &nbsp;&nbsp;  <input type="text" class="py-1 px-2 w-50 border-0 rounded-2"></label></div>
-                            <div><label for="" class="py-2">Rent : &nbsp;&nbsp; &nbsp;<input type="text" class="py-1 px-2 w-50 border-0 rounded-2"></label></div>
-                            <div><label for="" class="py-2">Clothes :<input type="text" class="py-1 px-2 w-50 border-0 rounded-2"></label></div>
+                            <label for="" class="py-2">Food : &nbsp;&nbsp;  <input id="food" type="text" class="py-1 px-2 w-50 border-0 rounded-2"></label></div>
+                            <div><label for="" class="py-2">Rent : &nbsp;&nbsp; &nbsp;<input id="rent" type="text" class="py-1 px-2 w-50 border-0 rounded-2"></label></div>
+                            <div><label for="" class="py-2">Clothes :<input id="clothe" type="text" class="py-1 px-2 w-50 border-0 rounded-2"></label></div>
                        </div>
                        <!-- calculate and saving -->
                         <div class="col-md-12 text-center py-2">
-                            <label for="" class="py-2 d-inline">Saving : &nbsp;<input type="text" class="py-1 px-2 w-25 border-0 rounded-2"></label> <span class="px-1">%</span>
-                            <a href="#" class="btn btn-primary py-1 px-2 text-center text-white"> Calculate</a>
+                            <label for="" class="py-2 d-inline">Saving : &nbsp;<input id="saving" type="text" class="py-1 px-2 w-25 border-0 rounded-2"></label> <span class="px-1">%</span>
+                            <a href="#" class="btn btn-primary py-1 px-2 text-center text-white" id="calculate"> Calculate</a>
                         </div>
-                        <div class="col-md-12"> <h3 class="text-dark text-center py-2 fs-5 fw-bolder"> Total Expensives :</h3></div>
-                        <div class="col-md-12"> <h3 class="text-dark text-center py-2 fs-5 fw-bolder">Balance :</h3></div>
+                        <div class="col-md-12"> <h3 class="text-dark text-center py-2 fs-5 fw-bolder"> Total Expensives :<span id="totalexpensive"></span></h3></div>
+                        <div class="col-md-12"> <h3 class="text-dark text-center py-2 fs-5 fw-bolder">Balance :<span id="balance"></span></h3></div>
                         <div class="col-md-12 text-center py-2">
-                            <a href="#" class="btn btn-primary py-1 px-5 text-center text-white"> Calculate</a>
+                            <a href="#" class="btn btn-primary py-1 px-5 text-center text-white" id="total-calculate"> Calculate</a>
                         </div>
-                        <div class="col-md-12"> <h3 class="text-dark text-center py-2 fs-5 fw-bolder">Saving Amount :</h3></div>
-                        <div class="col-md-12"> <h3 class="text-dark text-center py-2 fs-5 fw-bolder">Remaining Balance :</h3></div>
+                        <div class="col-md-12"> <h3 class="text-dark text-center py-2 fs-5 fw-bolder">Saving Amount :<span id="savingAmount"></span> </h3></div>
+                        <div class="col-md-12"> <h3 class="text-dark text-center py-2 fs-5 fw-bolder">Remaining Balance :<span id="remainingAmount"></span></h3></div>
                     </form>
                   </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- javascript link -->
+    <script src="js/money.js"></script>
 </body>
 </html>
